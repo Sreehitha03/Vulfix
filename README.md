@@ -37,6 +37,13 @@ python autopr.py \
 ```
 Applies fixes, creates a branch, and opens a Pull Request.
 
+4. if you want to scan only the current file you are working on
+```
+python vulfix.py path/to/your/file.js \
+--type file \
+--output reports/your_file.json 
+```
+
 ## ⚠️ Notes
 1. Ensure npm is in PATH or manually specify in autopr.py if needed.
 2. Code patch automation is limited; package_upgrade is currently supported.
