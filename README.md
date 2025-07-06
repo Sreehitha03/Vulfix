@@ -16,9 +16,9 @@ VulfixAI streamlines vulnerability management by integrating scanners (like Triv
 ## Usage 
 1. Run Scan + LLM Analysis
 ```   
-python vulfix.py https://github.com/Sreehitha03/Travel-Tracker.git \
+python vulfix.py giturl \
 --type repo \
---output reports/travel_tracker.json \
+--output reports/outputfilename.json \
 --summary-output reports/pr_summary.md \
 --actionable-fixes-output reports/actionable_fixes.json
 ```
@@ -32,7 +32,7 @@ ollama run gemma3:1b
 3. Create Automated PR
 ```
 python autopr.py \
---repo-url https://github.com/Sreehitha03/Travel-Tracker.git \
+--repo-url giturl \
 --actionable-fixes reports/actionable_fixes.json
 ```
 Applies fixes, creates a branch, and opens a Pull Request.
