@@ -14,7 +14,8 @@ VulfixAI streamlines vulnerability management by integrating scanners (like Triv
 4. GitHub Personal Access Token with repo scope
 
 ## Usage 
-1. Run Scan + LLM Analysis
+1. Create a reports folder
+2. Run Scan + LLM Analysis
 ```   
 python vulfix.py giturl \
 --type repo \
@@ -24,12 +25,12 @@ python vulfix.py giturl \
 ```
 Clones the repo, scans it, and generates LLM-processed reports.
 
-2. Start Local LLM
+3. Start Local LLM
 ```
 ollama run gemma3:1b
 ```
 
-3. Create Automated PR
+4. Create Automated PR
 ```
 python autopr.py \
 --repo-url giturl \
@@ -37,7 +38,7 @@ python autopr.py \
 ```
 Applies fixes, creates a branch, and opens a Pull Request.
 
-4. if you want to scan only the current file you are working on
+5. if you want to scan only the current file you are working on
 ```
 python vulfix.py path/to/your/file.js \
 --type file \
