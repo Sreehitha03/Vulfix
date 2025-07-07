@@ -35,7 +35,7 @@ def main():
             if args.type != 'report':
                 logging.error("--skip-scan can only be used with --type report.")
                 return
-            report_path = args.source # User provides the existing report directly
+            report_path = args.source providing existing report directly
             if not os.path.exists(report_path):
                 logging.error(f"Provided Trivy report '{report_path}' not found.")
                 return
