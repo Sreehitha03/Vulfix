@@ -47,4 +47,4 @@ python vulfix.py path/to/your/file.js \
 
 ## ⚠️ Notes
 1. Ensure npm is in PATH or manually specify in autopr.py if needed.
-2. Code patch automation is limited; package_upgrade is currently supported.
+2. Code patch automation is limited.
