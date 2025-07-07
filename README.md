@@ -1,5 +1,5 @@
 ## VulfixAI: Automated Vulnerability Remediation with LLMs
-VulfixAI streamlines vulnerability management by integrating scanners (like Trivy) with LLMs to analyze, categorize, and automatically propose fixes via GitHub Pull Requests—accelerating your security workflow.
+VulfixAI streamlines vulnerability management by integrating scanners Trivy with LLMs to analyze, categorize, and automatically propose fixes via GitHub Pull Requests—accelerating your security workflow.
 
 ## Features
 1. Scanner Integration: Ingests reports from tools like Trivy.
